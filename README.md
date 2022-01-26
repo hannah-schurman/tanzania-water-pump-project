@@ -32,13 +32,13 @@ Below is a density map of Non-Functional Pumps by Tanzanian region
 
 # Modeling
 ---
-I tested my data using a baseline Logistic Regression Model and got these results:
+I tested my data using a baseline Logistic Regression Model and got these results:<br>
 <img src="images/logreg.png"/>
 
-I then used SMOTE to deal with data imbalance and used a tuned Random Forest Model with the following tuned hyperparameters:
+I then used SMOTE to deal with data imbalance and used a tuned Random Forest Model with the following tuned hyperparameters:<br>
 <img src="images/random_forest.png"/>
 
-I then tested out how well an XGBoost Model would perform on the data with the following tuned hypyerparameters:
+I then tested out how well an XGBoost Model would perform on the data with the following tuned hypyerparameters:<br>
 <img src="images/XGB.png"/>
 
 
@@ -47,7 +47,7 @@ I then tested out how well an XGBoost Model would perform on the data with the f
 
 Looking at the Classification Reports and different Scores for each model, it XGBoost and Random Forest have very similar results - Random Forest Classifier does a better job at predicting 1 (Functional Needs Repair) but overall XGBoost has just slightly better overall scores. Either one would be an acceptable model
 
-I chose Random Forest as the best model. It performed faster than XGBoost which is important for such a large dataset like this, but also it had less False Positive Predictions, which is what I was prioritizing tring to reduce.
+I chose Random Forest as the best model. It performed faster than XGBoost which is important for such a large dataset like this, but also it had less False Positive Predictions, which is what I was prioritizing tring to reduce.<br>
 
 <img src="images/final_rf.png"/>
 
