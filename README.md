@@ -4,16 +4,14 @@
 
 # Overview
 ---
-Access to clean water is a fundamental human necessity and not having that access to a clean (or functional) supply of water is a serious health risk. Our initial dataset shows that almost 40% of water pumps throughout regions of Tanzania are not functional, and an additional 7% need repairs.    
+4 million people in Tanzania lack access to safe water. Access to clean water is a fundamental human necessity and not having that access is a serious health risk. Our initial dataset shows that almost 40% of water pumps throughout regions of Tanzania are not functional, and an additional 7% need repairs.
 
-In this project, I aim to create a model that will most accurately predict which water pumps are functional, which need repairs, and which need to be replaced completely. To make these predictions, I will start with a baseline machine learning model, then testing and fine-tuning more efficiant models optimizing hyperparameters. 
-
-My analysis began with a simple Logistic Regression Model, then used a Random Forest Model with parameters tuned, and then the final and most efficient analysis was an XGBoost Model. My final model was able to produce a score of __ % taking into consideration the decision to prioritize false negatives. 
+In this project, my goal was to create a model that would most accurately predict which water pumps are functional, which need repairs, and which need to be replaced completely. To make these predictions, I started with a baseline machine learning model, then tested and tuned more efficiant models and hyperparameters to find the optimal prediction model. The Random Forest model was most efficient and was able to produce a score of 78% taking into consideration the decision to prioritize False Negatives. 
 
 
 # Business Problem
 ---
-Using data gathered from Taarifa and the Tanzanian Ministry of Water, I have been tasked with analyzing the different features corresponding to functional and non functional water pumps with the goal of creating a model that can predict if a pump needs to be replaced. The stakeholder for this project is the World Health Organization and the data was provided by the Taarifa waterpoints dashboard. 
+Using data gathered from Taarifa and the Tanzanian Ministry of Water, I was tasked with analyzing the different features corresponding to functional and non functional water pumps with the goal of creating a model that can predict if a pump needs to be replaced. The stakeholder for this project was the World Health Organization and the data was provided by the Taarifa waterpoints dashboard. 
 
 Through my analysis it is important not to just create an accurate prediction model, but to assess our criteria for what an accurate model will look like. Because we are dealing with human health and life, it is important that we use a conservative model. We want to prioritize replacement over not replacement because our business cost is peoples well being. Therefore, for any false predictions our model makes, we want to prioritize False "not functional" (False Negative) over False "functional" (False Positive). This is because the risks are higher for not replacing a pump that needs replacing, over replacing a pump that didn't actually need to be replaced. This is so we can ensure that clean, potable water is available to communities across Tanzania.
 
@@ -56,7 +54,7 @@ I chose Random Forest as the best model. It performed faster than XGBoost which 
 ---
 The final Random Forest Model shows that we can predict the condition of each water pump with 78% accuracy. 
 
-I chose this model because of it's priority with classifying False Non-Functional, over False Functional. This model is most likely not not cost-effective because it will prioritize classifying a pump as needing to be replaced over being functional. Because of that prioritization though, this model does provide us with the most humanitarian solution and given the data and our project needs, provides the most useful results.
+I chose this model because of it's priority with classifying False Non-Functional, over False Functional. This model is most likely not cost-effective because it will prioritize classifying a pump as needing to be replaced over being functional. Because of that prioritization though, this model does provide us with the most humanitarian solution and given the data and our project needs, provides the most useful results.
 
 
 This map shows the accuracy of our testing predictions (blue represents the pumps that were predicted accurately and brown represents the pumps that were predcited inaccurately):<br>
