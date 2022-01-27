@@ -47,7 +47,7 @@ I then tested out how well an XGBoost Model would perform on the data with the f
 
 Looking at the Classification Reports and different Scores for each model, it XGBoost and Random Forest have very similar results - Random Forest Classifier does a better job at predicting 1 (Functional Needs Repair) but overall XGBoost has just slightly better overall scores. Either one would be an acceptable model
 
-I chose Random Forest as the best model. It performed faster than XGBoost which is important for such a large dataset like this, but also it had less False Positive Predictions, which is what I was prioritizing tring to reduce.<br>
+I chose Random Forest as the best model. It performed faster than XGBoost which is important for such a large dataset like this, but also it had less False Positive Predictions, which is what I was prioritizing trying to reduce.<br>
 
 <img src="images/final_rf.png"/>
 
