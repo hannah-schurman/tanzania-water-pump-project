@@ -52,6 +52,16 @@ I chose Random Forest as the best model. It performed faster than XGBoost which 
 <img src="images/final_rf.png"/>
 
 
+# Conclusion
+---
+The final Random Forest Model shows that we can predict the condition of each water pump with 78% accuracy. 
+
+I chose this model because of it's priority with classifying False Non-Functional, over False Functional. This model is most likely not not cost-effective because it will prioritize classifying a pump as needing to be replaced over being functional. Because of that prioritization though, this model does provide us with the most humanitarian solution and given the data and our project needs, provides the most useful results.
+
+
+This map shows the accuracy of our testing predictions (blue represents the pumps that were predicted accurately and brown represents the pumps that were predcited inaccurately):<br>
+<img src="images/model_accuracy.png"/>
+
 
 # Future Steps
 ---
