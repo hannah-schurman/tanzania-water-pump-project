@@ -82,8 +82,8 @@ For any additional questions, please contact Hannah Schurman at [hannah.schurman
 # Repository
 ---
 ```
-├── data
-├── images
+├── data                               #contains original datasets and model outputs for visualizations
+├── images 
 ├── README.md
 ├── tanzania_water_pump.ipynb
 └── tanzania_pump_presentation.pdf
