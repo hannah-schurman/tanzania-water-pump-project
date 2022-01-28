@@ -74,7 +74,7 @@ Due to the number of categorical features, after One Hot Encoding, the dataframe
 
 # Further Questions
 ---
-See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/tanzania-water-pump-project/blob/main/tanzania_water_pump.ipynb) or review this [presentation]()
+See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/tanzania-water-pump-project/blob/main/tanzania_water_pump.ipynb) or review this [presentation](https://github.com/hannah-schurman/tanzania-water-pump-project/blob/main/tanzania_pump_presentation.pdf)
 
 For any additional questions, please contact Hannah Schurman at [hannah.schurman1@gmail.com](hannah.schurman1@gmail.com) 
 
